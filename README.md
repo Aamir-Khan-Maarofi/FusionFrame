@@ -11,6 +11,7 @@ This was a weekend project as part of an extensive two months "Deep Neural Netwo
   - [Features](#features)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Features Overview](#features-overview)
   - [Contributing](#contributing)
 
 ## Features
@@ -27,8 +28,7 @@ This was a weekend project as part of an extensive two months "Deep Neural Netwo
    ```bash
    git clone https://github.com/yourusername/fusionframe.git
    cd fusionframe
-- Make sure the `yolo` sub-directory contains `coco.names`, `yolov3.cfg`, and `yolov3.weights`
-- If you intend to change the names, do change the paths in the YOLODetector class constructor for all three
+   ```
 
 1. **Create and activate a virtual environment:**
     ```bash
@@ -42,12 +42,25 @@ This was a weekend project as part of an extensive two months "Deep Neural Netwo
    ```
 
 ## Usage
+1. **Download YoloV3 Weights:**
+- [CFG (YoloV3)](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
+- [ClassNames (YoloV3)](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
+- [Weights (YoloV3)](https://github.com/patrick013/Object-Detection---Yolov3/blob/master/model/yolov3.weights)
+- Ensure that the files after download are placed in `yolo` sub-directory inside current script directory
+- Otherwise, update the paths in `YOLODetector` constructor to ensure that configurations are loaded 
+  ```python
+   self.weights_path = 'yolo/yolov3.weights'
+   self.cfg_path = 'yolo/yolov3.cfg'
+   self.names_path = 'yolo/coco.names'
+  ```
+- On invalid configuration, invalid paths to configurations (files renamed, moved) the app will show an error message and abort. 
+  
 1. **Run the application:**
    ```bash
    python fusionframe.py
    ```
 
-2. **Features Overview:**
+## Features Overview
 - Source Selection: Load images, videos, or start the live camera feed.
 - Object Detection: Use YOLOv3 to detect objects in the selected source.
 - Filters List: Apply various filters to the selected source.
