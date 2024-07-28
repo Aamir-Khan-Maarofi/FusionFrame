@@ -1,4 +1,4 @@
-# FusionFrame
+## FusionFrame
 
 FusionFrame is basic image and video processing application built using `python`, `opencv` and the `customtkinter` library. It allows users to apply various filters, detect objects using pre-trained YOLOv3, process prictures, stored videos, and live video feeds from a webcam.
 
@@ -7,12 +7,12 @@ This was a weekend project as part of an extensive two months "Deep Neural Netwo
 ## Table of Contents
 
 - [FusionFrame](#fusionframe)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Features Overview](#features-overview)
-  - [Contributing](#contributing)
+- [Table of Contents](#table-of-contents)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features Overview](#features-overview)
+- [Contributing](#contributing)
 
 ## Features
 

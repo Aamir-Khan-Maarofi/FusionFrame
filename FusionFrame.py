@@ -107,15 +107,6 @@ class YOLODetector:
         return image
 
 
-import os
-import cv2
-import numpy as np
-import threading
-import customtkinter
-from PIL import Image
-from tkinter import filedialog, messagebox
-import psutil
-
 class FusionFrame(customtkinter.CTk):
     """
     FusionFrame class for managing the main application window and interactions.
