@@ -1,0 +1,15 @@
+customtkinter==5.2.2
+darkdetect==0.8.0
+httplib2==0.22.0
+numpy==2.0.1
+opencv-python==4.10.0.84
+packaging==24.1
+pillow==10.4.0
+proto-plus==1.23.0
+psutil==6.0.0
+pyasn1_modules==0.4.0
+requests==2.32.3
+requests-oauthlib==2.0.0
+setuptools==69.5.1
+urllib3==2.2.2
+wheel==0.43.0
