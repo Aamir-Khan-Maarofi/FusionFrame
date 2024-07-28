@@ -26,7 +26,7 @@ This was a weekend project as part of an extensive two months "Deep Neural Netwo
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/fusionframe.git
+   git clone https://github.com/Aamir-Khan-Maarofi/FusionFrame.git
    cd fusionframe
    ```
 
